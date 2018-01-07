@@ -1,0 +1,14 @@
+{
+  "name": "compare-micro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "micro"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "firebase": "^4.8.1",
+    "micro": "^9.0.2"
+  }
+}
