@@ -1,0 +1,29 @@
+{
+  "name": "data",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "babel-version": "babel --version",
+    "start": "nodemon lib/index.js --exec babel-node --presets es2015,stage-2",
+    "build": "babel lib -d dist",
+    "serve": "node dist/index.js",
+    "test": "mocha --compilers js:babel-register"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "mocha": "^4.1.0",
+    "nodemon": "^1.14.8"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "crypto": "^1.0.1",
+    "express": "^4.16.2",
+    "firebase": "^4.8.1",
+    "moment": "^2.20.1",
+    "now": "^9.0.1"
+  }
+}
